@@ -23,6 +23,6 @@ jobs:
     - name: Deploy CloudFormation Stack
       run: |
         aws cloudformation deploy \
-          --template-file lab-network.yml \
+          --template-file lab-network.yaml \
           --stack-name my-cloudformation-stack \
           --capabilities CAPABILITY_NAMED_IAM
