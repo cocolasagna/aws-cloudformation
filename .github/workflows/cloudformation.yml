@@ -26,3 +26,10 @@ jobs:
           --template-file lab-network.yaml \
           --stack-name my-cloudformation-stack \
           --capabilities CAPABILITY_NAMED_IAM
+    - name: Deploy EC2 Stack
+      run: |
+        aws cloudformation deploy \
+          --template-file lab-application.yaml \
+          --stack-name lab-app \
+          --capabilities CAPABILITY_NAMED_IAM \
+          --parameter-overrides NetworkStackName=lab-network
