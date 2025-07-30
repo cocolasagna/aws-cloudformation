@@ -32,4 +32,4 @@ jobs:
           --template-file lab-application.yaml \
           --stack-name lab-app \
           --capabilities CAPABILITY_NAMED_IAM \
-          --parameter-overrides NetworkStackName=lab-network
+          --parameter-overrides NetworkStackName=my-cloudformation-stack
