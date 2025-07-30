@@ -29,7 +29,7 @@ jobs:
     - name: Deploy EC2 Stack
       run: |
         aws cloudformation deploy \
-          --template-file lab-application.yaml \
+          --template-file lab-application2.yaml \
           --stack-name lab-app \
           --capabilities CAPABILITY_NAMED_IAM \
           --parameter-overrides NetworkStackName=my-cloudformation-stack
